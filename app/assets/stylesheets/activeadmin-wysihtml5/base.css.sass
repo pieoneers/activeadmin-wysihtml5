@@ -2,7 +2,11 @@
 @import 'activeadmin-wysihtml5/icons'
 
 .wysihtml5-sandbox
-  +box-sizing(border-box)
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -o-box-sizing: border-box
+  -ms-box-sizing: border-box
+  box-sizing: border-box
 
 #modal-overlay
   position: fixed
@@ -309,4 +313,3 @@ body.active_admin form
 
           &> .blocks-selector:hover ul
             display: none !important
-
